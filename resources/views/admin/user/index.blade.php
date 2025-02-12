@@ -28,7 +28,8 @@
                                 @foreach ($users as $no => $user)
                                     <tr>
                                         <th scope="row">{{ ++$no }}</th>
-                                        <td><img src="" alt="foto.png" width="50px"></td>
+                                        <td><img src="{{ asset('storage/public/user/image/' . $user->image) }}"
+                                                alt="foto.png" width="50px"></td>
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->email }}</td>
                                         <td><span
